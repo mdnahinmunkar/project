@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        @media (max-width:767px){
+            
+        h2 {
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-image {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        .container{
+            
+        }
+    }
+
+    @media (min-width : 768px){
+        h2 {
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-image {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: repeat(auto-fit,33vw);
+            gap: 10px;
+        }
+    }
+    </style>
+</head>
+<body>
+
+<h2>Product Categories</h2>
+
+<!-- Electronics Category -->
+
+<div class="container">
+<div class="item">
+<ul>
+    <li>
+        <h3>Electronics</h3>
+        <img class="product-image" src="imh1.jpg" alt="Electronics Product 1">
+        <p>Product Name: Electronics Product 1</p>
+        <p>Price: $99.99</p>
+        <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </li>
+</ul>
+</div>
+<div class="item">
+    <ul>
+        <li>
+            <h3>Electronics</h3>
+            <img class="product-image" src="imh1.jpg" alt="Electronics Product 1">
+            <p>Product Name: Electronics Product 1</p>
+            <p>Price: $99.99</p>
+            <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </li>
+    </ul>
+    
+    </div>
+
+</div>
+<!-- Clothing Category -->
+
+
+</body>
+</html>

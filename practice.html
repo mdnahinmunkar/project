@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Garment Store</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .product-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .product-card {
+            border: 1px solid #ccc;
+            margin: 10px;
+            padding: 10px;
+            width: 200px;
+        }
+        .product-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Our Garment Store</h1>
+    <div id="product-grid" class="product-grid">
+        <!-- Products will be added here -->
+    </div>
+
+    <script>
+        // Sample product data
+        var products = [
+            {id: 1, name: 'Product 1', image: 'imh1.jpg', price: '$100'},
+            {id: 2, name: 'Product 2', image: 'imh1.jpg', price: '$120'},
+            // Add more products as needed
+        ];
+
+        // Get the product grid element
+        var productGrid = document.getElementById('product-grid');
+
+        // Loop through the products and add them to the page
+        for (var i = 0; i < products.length; i++) {
+            var product = products[i];
+            var productCard = document.createElement('div');
+            productCard.className = 'product-card';
+            productCard.innerHTML = 
+                '<img src="' + product.image + '" alt="' + product.name + '">' +
+                '<h2>' + product.name + '</h2>' +
+                '<p>Price: ' + product.price + '</p>';
+            productGrid.appendChild(productCard);
+        }
+    </script>
+</body>
+</html>
